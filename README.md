@@ -98,4 +98,56 @@ Build the application for production:
 npm run build
 ```
 
+---
+
+## 📤 Pushing to GitHub
+
+### 1. Install Git (if needed)
+
+- Download: [https://git-scm.com/download/win](https://git-scm.com/download/win)
+- Run the installer and restart your terminal when done.
+
+### 2. Repository
+
+This project is hosted at: **[github.com/ichchaverma12/FakeNewsDetector](https://github.com/ichchaverma12/FakeNewsDetector)**
+
+### 3. Push your code to GitHub
+
+Open a terminal in your project folder (`C:\FakeNewsDetecter`) and run:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit: Fake News Detector app"
+git branch -M main
+git remote add origin https://github.com/ichchaverma12/FakeNewsDetector.git
+git push -u origin main
+```
+
+If the repo already has commits (e.g. an initial README), use:
+
+```bash
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+```
+
+### 4. SSH (optional)
+
+```bash
+git remote add origin git@github.com:ichchaverma12/FakeNewsDetector.git
+git push -u origin main
+```
+
+### 5. Optional: GitHub CLI
+
+If you use [GitHub CLI](https://cli.github.com/), you can create the repo and push in one go:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit: Fake News Detector app"
+git remote add origin https://github.com/ichchaverma12/FakeNewsDetector.git
+git push -u origin main
+```
+
 
